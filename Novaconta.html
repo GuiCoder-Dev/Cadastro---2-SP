@@ -13,21 +13,21 @@
                 <h1>Nova conta</h1>
 
                 <form>
-                    <input type = "text" placeholder = "Nome completo" name = "name">
+                    <input type = "text" placeholder = "Nome completo" name = "name" required pattern="[a-zA-Z\s]+">
 
-                    <input type = "email" placeholder = "Digite seu email" name = "email">
+                    <input type = "email" placeholder = "Digite seu email" name = "email" required>
 
-                    <input type = "password" placeholder = "Digite sua senha" name = "password">
+                    <input type = "password" placeholder = "Digite sua senha" name = "password" required>
 
                     <div class = "checkbox">
-                        <input type = "checkbox" name = "marcar">
-                        <label id = "marcar"> Concordo com os termos.</label>
+                        <input type = "checkbox" name = "marcar" required>
+                        <label for = "marcar"> Concordo com os termos.</label>   
                     </div>
                     
-                    
-
-                    <button>Acessar</button>
+                    <input type = "submit" value = "Criar conta">
                 </form>
+
+                
 
                 <div class = "links">
                     <p>Já possui uma conta?</p>
