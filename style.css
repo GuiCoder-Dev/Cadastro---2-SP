@@ -90,6 +90,7 @@ input[type = "submit"]{
     margin-bottom: 20px;
     font-weight: bold;
     cursor: pointer;
+    z-index: 2;
 }
 
 
@@ -125,6 +126,10 @@ input[type = "submit"]{
 }
 
 
+form {
+    position: relative;
+}
+
 form .checkbox{
     display: flex;
     align-items: center;
@@ -132,6 +137,20 @@ form .checkbox{
 
 form .checkbox label{
     font-size: 14px;
+}
+
+form::after{
+    content: "";
+    background-image: url(/imgs/code.svg);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    bottom: -19px;
+    right: -15px;
 }
 
 
